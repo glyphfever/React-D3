@@ -1,0 +1,26 @@
+.box {
+  background-color: #dbeafe;
+  border: 6px solid #3b82f6;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #1e40af;
+}
+p {
+  color:#2563eb;
+}
+H1 {
+  font-size: 36px;
+  color: #dc2626;
+  text-align: center;
+}
+.highlight {
+  background-color: #fef08a;
+  border: 2px solid #fbbf24;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #b45309;
+}
