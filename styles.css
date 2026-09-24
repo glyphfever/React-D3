@@ -1,11 +1,11 @@
+/* Add background, border, padding, and margin */
 .box {
-  background-color: #dbeafe;
-  border: 6px solid #3b82f6;
-  padding: 4px;
-  margin: 10px;
-  border-radius: 4px;
-  font-size: 14px;
-  color: #1e40af;
+  background: #dbeafe;
+  border-color: #3b82f6;
+  border-width: 2px;
+  border-style: solid;
+  padding: 20px;
+  margin:16px;
 }
 p {
   color:#2563eb;
@@ -24,3 +24,67 @@ H1 {
   font-size: 16px;
   color: #b45309;
 }
+/* Style the navigation */
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  padding: 20px;
+}
+
+/* Add font-size, color, and text-align */
+h1 {
+  font-size:35 px;
+  color: red;
+  text-align: center;
+}
+
+/* Style only elements with class="highlight" */
+.highlight {
+  background: #fef08a;
+  padding: 8px;
+}
+-----------------------------------
+/* Style the button */
+button {
+  background: #2563eb;
+  color: white;
+  padding:12px 24px;
+  border: none;
+  border-radius:8px;
+  cursor: pointer;
+}
+------------------------
+body {
+  background: #f3f4f6;
+  padding: 20px;
+}
+
+.card {
+  /* Add your styles */
+  background: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 8px;
+  padding:10px 20px;
+  box-shadow: 0px 2px 4px;
+}
+
+.card-title {
+  color: red;
+  font-size:18px
+}
+
+.card-text {
+  color: blue;
+  font-size: 14px
+}
+-------------------------
+
