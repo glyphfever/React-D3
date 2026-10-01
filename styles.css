@@ -134,3 +134,24 @@ button:hover {
  background-color: #fee2e2;
   color: #991b1b;
 }
+--------------------------------
+/* Base alert styles */
+.alert {
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-bottom: 120px;
+  border-left: 4px solid;
+}
+
+/* Success variant */
+.success {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+/* Error variant */
+.error {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+--------------------------------
