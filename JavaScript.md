@@ -1,0 +1,25 @@
+/* shuttle colors */
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Shuffle colors with Lodash</h2>
+    <p id="result">Click the button to shuffle!</p>
+    <button id="btn">Shuffle</button>
+
+    <!-- Lodash is loaded from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    <script>
+      const colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+
+      document.getElementById("btn").addEventListener("click", function () {
+        // Use _.shuffle() to randomize the colors array
+        // Then display the result in the paragraph
+      const shuffled = _.shuffle(colors);
+      document.getElementById("result").textContent = shuffled.join(", ");
+      
+      });
+    </script>
+  </body>
+</html>
+
