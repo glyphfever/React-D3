@@ -155,3 +155,82 @@ button:hover {
   color: #dc2626;
 }
 --------------------------------
+/* Profile card HTML*/
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="profile-card">
+      <img
+        src="https://picsum.photos/100/100"
+        alt="Profile"
+        class="avatar"
+      />
+      <h2 class="name">Jane Doe</h2>
+      <p class="bio">
+        Web developer & data viz enthusiast.
+        Building cool stuff with code.
+      </p>
+      <button class="follow-btn">Follow</button>
+    </div>
+  </body>
+</html>
+
+/* Profile card CSS */
+body {
+  background: #f3f4f6;
+  padding: 40px;
+  font-family: system-ui, sans-serif;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  max-width: 280px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+
+.name {
+  margin: 16px 0 8px;
+  color: #1f2937;
+  font-size: 20px;
+}
+
+.bio {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+.follow-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.follow-btn:hover {
+  background: #1d4ed8;
+}
+
+---------------------------------
+
+
+
+
