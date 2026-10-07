@@ -1,4 +1,4 @@
-/* shuttle colors */
+// shuttle colors 
 <!DOCTYPE html>
 <html>
   <body>
@@ -22,4 +22,66 @@
     </script>
   </body>
 </html>
+----------------------------------------
+
+// Create a variable called 'name' with your name
+const name = "teresa";
+
+// Create a variable called 'age' with your age
+let age = 60;
+
+// Log both variables
+console.log(name);
+console.log(age);
+
+---------------------------------------
+const a = 20;
+const b = 4;
+
+// Log a + b
+console.log(a + b);
+// Log a - b
+console.log(a - b);
+// Log a * b
+console.log(a * b);
+// Log a / b
+console.log(a / b);
+
+-------------------------------------
+
+const sideA = 3;
+const sideB = 4;
+
+// Hint: hypotenuse = √(a² + b²)
+// Use ** to square: 3 ** 2 = 9
+// Use Math.sqrt() for square root
+
+const hypotenuse = Math.sqrt(
+                    (sideA ** 2) + 
+                    (sideB ** 2) )
+
+console.log(hypotenuse);
+
+// Use backticks and ${} to insert the variable
+console.log(`The hypotenuse is ${hypotenuse}`);
+
+-------------------------------
+const countries = ["France", "Germany", "Spain", "Italy", "Portugal"];
+
+// Log: "There are X countries in the list"
+console.log(`There are ${countries.length} countries in the list`);
+
+----------------------------------
+const countries = ["France", "Germany", "Spain", "Italy", "Portugal"];
+
+// Log the first country
+console.log(`The first country is ${countries[0]}.`);
+
+// Log the last country (hint: use .length)
+let n = countries.length - 1;
+let name = countries[n]
+console.log(`The last country is ${name}.`);
+
+-------------------------------------------
+
 
