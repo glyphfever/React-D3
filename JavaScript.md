@@ -228,5 +228,69 @@ const color = value > 0 ? "green" : value === 0 ? "gray" : "red"
 console.log(color);  // should log "red"
 
 ---------------------------------------------
+const numbers = [2, 4, 6, 8];
 
+// Use map to triple each number
+const tripled = numbers.map(n => { return n * 3 })
 
+console.log(tripled);  // should log [6, 12, 18, 24]
+
+--------------------------------
+
+const data = [
+  { city: "Paris", temp: 22 },
+  { city: "London", temp: 18 },
+  { city: "Berlin", temp: 20 }
+];
+
+// Extract city names
+const cities = data.map(n => {return n.city})
+
+console.log(cities);  // should log ["Paris", "London", "Berlin"]
+
+-------------------------------------
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// Keep only even numbers (hint: n % 2 === 0)
+const evens = numbers.filter((n) => {
+  return n % 2 === 0;
+});
+
+console.log(evens);  // should log [2, 4, 6, 8]
+
+--------------------------------
+
+const data = [
+  { city: "Paris", temp: 22 },
+  { city: "London", temp: 18 },
+  { city: "Berlin", temp: 20 }
+];
+
+// Keep cities where temp > 19
+const warm = data.filter((d) => {
+  return d.temp > 19;
+});
+
+console.log(warm);
+// should log [{ city: "Paris", temp: 22 }, { city: "Berlin", temp: 20 }]
+
+------------------------------
+
+const data = [
+  { city: "Paris", temp: 22 },
+  { city: "London", temp: 18 },
+  { city: "Berlin", temp: 20 }
+];
+
+// Chain filter and map
+const warmCityNames = data
+  .filter((d) => {
+    return d.temp > 19;
+  })
+  .map((d) => {
+    return d.city;
+  });
+
+console.log(warmCityNames);  // should log ["Paris", "Berlin"]
+-
