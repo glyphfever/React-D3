@@ -84,4 +84,94 @@ console.log(`The last country is ${name}.`);
 
 -------------------------------------------
 
+const countries = ["France", "Germany", "Spain", "Italy", "Portugal"];
+
+// Check if "Spain" is in the array
+console.log(countries.includes("Spain") )
+ 
+// Check if "Japan" is in the array
+console.log(countries.includes("Japan") )
+
+----------------------------------------------
+
+const countries = ["France", "Germany", "Spain"];
+
+// Join the array into a string with ", " as separator
+console.log(countries.join(", "));
+
+-------------------------------------------
+const company = {
+  name: "TechCorp",
+  headquarters: {
+    country: "Japan",
+    city: "Tokyo",
+    employees: 5000
+  },
+  founded: 2010
+};
+
+// Log the city
+console.log(company.headquarters.city);
+
+-------------------------------------
+// Create an array of objects matching the table
+const data = [
+  {fruit: "apple", price: 1.2},
+  {fruit: "banana", price: 0.8}
+];
+
+console.log(data);
+
+---------------------------------
+const data = [
+  { country: "France", population: 67 },
+  { country: "Germany", population: 83 },
+  { country: "Spain", population: 47 }
+];
+
+// Log Germany's population
+console.log(data[1].population);
+
+----------------------------------
+const data = [
+  { country: "France", population: 67 },
+  { country: "Germany", population: 83 },
+  { country: "Spain", population: 47 }
+];
+
+// Log: "The dataset has X countries"
+console.log(`The dataset has ${data.length} countries`);
+
+----------------------------------
+// Create an arrow function called 'triple'
+function triple (x) {
+  return x * 3
+}
+
+console.log(triple(4));   // should log 12
+console.log(triple(10));  // should log 30
+
+-------------------------------------
+
+// Create a 'multiply' function with two parameters
+function multiply (x, y) {
+  return x * y
+}
+
+console.log(multiply(3, 4));   // should log 12
+console.log(multiply(7, 8));   // should log 56
+
+--------------------
+
+// Return an object with name and score properties
+const makePlayer = (name, score) => (
+  {name: name, score: score}
+)
+
+console.log(makePlayer("Alice", 100));
+// should log { name: "Alice", score: 100 }
+
+-------------------------
+
+
 
