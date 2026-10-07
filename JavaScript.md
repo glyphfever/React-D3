@@ -172,6 +172,61 @@ console.log(makePlayer("Alice", 100));
 // should log { name: "Alice", score: 100 }
 
 -------------------------
+//Multi-line functions need explicit return.
+const greet = (name) => {
+  const greeting = "Hello, " + name + "!";
+  return greeting;
+};
 
+console.log(greet("Bob"));  // should log "Hello, Bob!"
+
+---------------------------------
+const score = 75;
+
+// Is score greater than 50?
+console.log(score > 50);
+
+// Is score equal to 75? (use ===)
+console.log(score === 75);
+
+// Is score less than or equal to 100?
+console.log(score <= 100);
+
+--------------------------------
+const score = 45;
+
+// If score >= 60, log "pass", otherwise log "fail"
+if (score >= 60) {
+  console.log("pass");
+} else {
+  console.log("fail");
+}
+
+------------------------------
+
+const age = 22;
+const hasTicket = true;
+
+// Can they enter? (age >= 18 AND hasTicket)
+const canEnter = age >= 18 && hasTicket
+console.log(canEnter);
+
+------------------------------
+
+const temperature = 35;
+
+// Use a ternary: condition ? ifTrue : ifFalse
+const status = temperature > 30 ? "hot" : "cold"
+console.log(status);  // should log "hot"
+
+------------------------------
+const value = -5;
+
+// Hint: you can chain ternaries
+// condition1 ? result1 : condition2 ? result2 : result3
+const color = value > 0 ? "green" : value === 0 ? "gray" : "red"
+console.log(color);  // should log "red"
+
+---------------------------------------------
 
 
